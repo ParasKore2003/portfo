@@ -18,7 +18,7 @@ def write_to_file(data):
 
 def write_to_csv(data):
     """stores data in csv format"""
-    with open('./web_development/database.csv',newline='', mode='a', encoding='utf-8') as database2:
+    with open('./database.csv',newline='', mode='a', encoding='utf-8') as database2:
         email = data["email"]
         subject = data["subject"]
         message = data["message"]

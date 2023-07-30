@@ -92,7 +92,7 @@
       </div>
 
       <div class="col-xs-12">
-        <p>Download the Project report:-<a href="report3.pdf" download="Fire Detection System.pdf"><button type="submit">Download</button></a><p>
+        <p>download the Project report:-<a href="#"><button class="down-btn" type="submit">Download</button></a><p>
       </div>
 
     </div>
@@ -100,6 +100,11 @@
 </div>
 
 <script>
+  const downloadBtn = document.querySelector(".down-btn");
+  downloadBtn.addEventListener("click",(event)=>{
+    event.preventDefault();
+    window.location.href = "report2.pdf"
+  })
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
